@@ -1,0 +1,31 @@
+{
+  "service": {
+    "prefix": "service",
+    "body": [
+      "import { Provide } from '@midwayjs/decorator';",
+      "import { BaseMoleculerService, CoolMoleculer } from '@cool-midway/moleculer';",
+      "import { InjectEntityModel } from '@midwayjs/orm';",
+      "import { Repository } from 'typeorm';",
+      "",
+      "/**",
+      " * 描述",
+      " */",
+      "@Provide()",
+      "@CoolMoleculer({",
+      "  entity: DemoAppGoodsEntity,",
+      "  method: ['info', 'add', 'page'],",
+      "})",
+      "export class XxxService extends BaseMoleculerService {",
+      "  @InjectEntityModel(实体)",
+      "  xxxEntity: Repository<实体>;",
+      "",
+      "  /**",
+      "   * 描述",
+      "   */",
+      "  async xxx() {}",
+      "}",
+      ""
+    ],
+    "description": "cool-admin service代码片段"
+  }
+}
