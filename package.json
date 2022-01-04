@@ -17,7 +17,8 @@
         "egg": "^2.33.1",
         "egg-scripts": "^2.15.2",
         "lodash": "^4.17.21",
-        "mysql2": "^2.3.3"
+        "mysql2": "^2.3.3",
+        "typeorm": "^0.2.41"
     },
     "devDependencies": {
         "@midwayjs/cli": "^1.2.93",
